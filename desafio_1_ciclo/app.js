@@ -2,6 +2,13 @@
 
 Codigo JavaScript de un mini BlackJack ejecutado por alerts en el navegador.
 
+La funcion random (lineas 15 - 16 - 17) fue sacada de google con el proposito de generar numeros aleatorios en un rando determinado. Es la unica parte del codigo que no fue escrito a mano. El resto del codigo fue pensado y maquetado en papel para luego ser escrito a mano, sin hacer uso de ningun recurso online u offline.
+
+Estoy bastante orgulloso de este mini juego ya que es el primero que hago :).
+
+- Fecha de creacion: 21/08/2022
+- Fecha de finalizacion: 24/08/2022
+
 */
 
 //-----------↓ ↓ ↓ ↓ CODIGO COPIADO EN GOOGLE ↓ ↓ ↓ ↓--------------------------------------------------------
@@ -9,6 +16,11 @@ function random(min, max) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 //-----------↑ ↑ ↑ ↑ CODIGO COPIADO EN GOOGLE ↑ ↑ ↑ ↑--------------------------------------------------------
+
+
+/*---------------------------------------
+Bienvenida y entrada de saldo para jugar
+---------------------------------------*/
 
 let bienvenida = 'Bienvenido a BlackJack ONLINE!'
     
@@ -21,10 +33,16 @@ let saldo = 0
 let agregarSaldo = Number(prompt(`Cuentas con un saldo de ${saldo}. Cuanto dinero quieres agregar?`))
 
 if (reset == true){
+
     saldo += agregarSaldo
+
 }else {
-    0
+
 }
+
+/*----------------------------------------------------------------------------------
+Resolucion del desafio, aqui es donde esta el ciclo a presentar como respuesta ↓ ↓ ↓
+----------------------------------------------------------------------------------*/
 
 while (saldo > 0) {
     
@@ -105,7 +123,7 @@ while (saldo > 0) {
                 alert('Hasta luego!')
             
                 break
-                
+
             } else {
 
                 continue
@@ -125,7 +143,7 @@ while (saldo > 0) {
                 alert('Hasta luego!')
             
                 break
-                
+
             } else {
 
                 continue
@@ -143,7 +161,7 @@ while (saldo > 0) {
                 alert('Hasta luego!')
         
                 break
-                
+
             } else {
 
                 continue
@@ -163,7 +181,7 @@ while (saldo > 0) {
                 alert('Hasta luego!')
         
                 break
-                
+
             } else {
 
                 continue
