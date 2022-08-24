@@ -195,6 +195,7 @@ while (saldo > 0) {
     }else {
     
         alert('Ingresaste un dato incorrecto!!')
+        
     }
 }
 
