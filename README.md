@@ -3,7 +3,7 @@
 ## Desafio complementario I
     Codigo JavaScript de un mini BlackJack ejecutado por alerts en el navegador.
 
-    La funcion random (lineas 15 - 16 - 17) fue sacada de google con el proposito de generar numeros aleatorios en un rando determinado. Es la unica parte del codigo que no fue escrito a mano. El resto del codigo fue pensado y maquetado en papel para luego ser escrito a mano, sin hacer uso de ningun recurso online u offline.
+    La funcion random (lineas 15 - 16 - 17) fue sacada de google con el proposito de generar numeros aleatorios en un rango determinado. Es la unica parte del codigo que no fue escrito a mano. El resto del codigo fue pensado y maquetado en papel para luego ser escrito a mano, sin hacer uso de ningun recurso online u offline.
 
     Estoy bastante orgulloso de este mini juego ya que es el primero que hago :).
 
