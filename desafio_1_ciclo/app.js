@@ -94,7 +94,7 @@ while (saldo > 0) {
     
         alert(`Dealer: Mi primera carta es ${dealerHand_card1} y mi segunda carta es ${dealerHand_card2}, mi mano es de ${dealerHand}`);
         
-        if (dealerHand < 17) {
+        while (dealerHand < 17) {
         
             alert(`Como mi mano es menor a 17 debo pedir una carta mas.`)
         
