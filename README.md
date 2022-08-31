@@ -29,3 +29,22 @@ function random(min, max) {
     En caso de ser el usuario el ganador de la mano se le sumara su apuesta multiplicada por 2 (saldo + apuesta * 2).
 
     En caso de ser el dealer se notificara al usuario. No se le restara el monto de la apuesta ya que este fue restado al inicio del juego.
+
+## Desafio obligatorio I
+    ** El nombre de la carpeta que lo contiene es 'desafio_obligatorio_1' **
+
+    Codigo JavaScript simulador de operacion de compras ejecutado por alerts en el navegador.
+
+    El codigo propone elegir entre tres items, los cuales se identifican por codigos numericos  [1,2,3].
+    Al item elegido se lo somete a una funcion para calcular el iva y las cuotas para luego sumarlo al precio final. 
+    Tambien se da la opcion de aplicar un codigo de descuento.
+
+    - Fecha de creacion: 30/08/2022
+    - Fecha de finalizacion: 30/08/2022
+
+### • Concepto:
+    En este codigo se simula una operacion de compra de un e-commerce, haciendo uso de funciones para simplificar el codigo.
+
+    Se daran tres articulos con sus respectivos precios y se le pedira al usuario que ingrese el numero que representa al item.
+
+    Se establecieron dos funciones por separado, una que contiene las operaciones que se le aplicara al monto del producto (como IVA y calculo de cuotas), y otra donde se haran todas las operaciones por parte del usuario, como elegir las cuotas.
