@@ -29,7 +29,6 @@ function random(min, max) {
     En caso de ser el usuario el ganador de la mano se le sumara su apuesta multiplicada por 2 (saldo + apuesta * 2).
 
     En caso de ser el dealer se notificara al usuario. No se le restara el monto de la apuesta ya que este fue restado al inicio del juego.
-<<<<<<< HEAD
 
 ## Desafio obligatorio I
     ** El nombre de la carpeta que lo contiene es 'desafio_obligatorio_1' **
@@ -52,22 +51,23 @@ function random(min, max) {
 
 
 ## Desafio complementario 2
-    ** El nombre de la carpeta que lo contiene es 'desafio_obligatorio_1' **
+
+### ADICIONAL
+    ADICIONAL: Este codigo es igual al entregado en el desafio pasado, con la diferencia que se usan arrays con objetos dentro para almacenar productos y se     usa un array para simular un carrito de compras. 
+    El carrito de compras, ademas de detallar el nombre del producto con su precio, muestra cual es el total a pagar hasta el momento de realizada la             operacion.
+    
+    ** El nombre de la carpeta que lo contiene es 'desafio_complementario_2' **
 
     Codigo JavaScript simulador de operacion de compras ejecutado por alerts en el navegador.
 
     El codigo propone elegir entre tres items, los cuales se identifican por codigos numericos  [1,2,3].
     Al item elegido se lo somete a una funcion para calcular el iva y las cuotas para luego sumarlo al precio final. 
     Tambien se da la opcion de aplicar un codigo de descuento.
-    
-    
-    ADICIONAL: Este codigo es igual al entregado en el desafio pasado, con la diferencia que se usan arrays con objetos dentro para almacenar productos y se     usa un array para simular un carrito de compras. 
-    El carrito de compras, ademas de detallar el nombre del producto con su precio, muestra cual es el total a pagar hasta el momento de realizada la             operacion.
 
     - Fecha de creacion: 05/09/2022
     - Fecha de finalizacion: 05/09/2022
     
-    ### • Concepto:
+### • Concepto:
     En este codigo se simula una operacion de compra de un e-commerce, haciendo uso de funciones para simplificar el codigo.
 
     Se daran tres articulos con sus respectivos precios y se le pedira al usuario que ingrese el numero que representa al item.
