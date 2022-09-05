@@ -1,0 +1,16 @@
+* {
+    font: inherit;
+}
+body {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px black;
+}
