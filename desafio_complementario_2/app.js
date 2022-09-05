@@ -14,7 +14,7 @@ El carrito de compras, ademas de detallar el nombre del producto con su precio, 
 
 */
 
-alert('Catalogo: \n\nIntel i5 9400f ($69959) \n\nIntel i7 9700k ($129999) \n\nIntel i9 9900k ($199899)\n\n')
+
 
 /*
 
@@ -106,6 +106,12 @@ const articulos = [
   {id:3, nombre:'intel i9 9900k', precio: 199899,}
 ]
 
+
+let catalogo = articulos.map((catalogo_c)=> `${catalogo_c.id}: ${catalogo_c.nombre} $${catalogo_c.precio}`)
+alert(`Esta es nuestra lista de productos:\n\n${catalogo.join('\n\n')}\n\n`)
+
+
+//alert(`Esta es nuestra lista de productos: ${catalogo.join('\n\n')}\n\n}`)
 
 while (seguirComprando == 0) {
 
