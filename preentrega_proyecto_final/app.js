@@ -1,16 +1,15 @@
 /*
 
-Codigo JavaScript simulador de operacion de compras ejecutado por alerts en el navegador.
+Primera entrega del proyecto final.
 
-El codigo propone elegir entre tres items, los cuales se identifican por codigos numericos  [1,2,3].
-Al item elegido se lo somete a una funcion para calcular el iva y las cuotas para luego sumarlo al precio final. 
+Como se puede notar se ha usado el mismo codigo JavaScript que en la entrega de arrays. Sin embargo tiene una diferencia, se agrego la funcion de, en el alert que muestra el carrito, tambien muestra la cantidad de unidades elegidas por el usuario y se aclara el IVA% que se aplico al producto.
 
+Notese tambien que se ha cambiado el array de objetos, este array ahora muestra una serie de platos que se pueden pedir a comprar, ya que la tematica del proyecto es de un "ecommerce" de un restaurant de lujo el cual contiene un carrito de compras donde puede pedir y abonar productos para ser enviados por medio de un delivery.
 
-ADICIONAL: Este codigo es igual al entregado en el desafio pasado, con la diferencia que se usan arrays con objetos dentro para almacenar productos y se usa un array para simular un carrito de compras. 
-El carrito de compras, ademas de detallar el nombre del producto con su precio, muestra cual es el total a pagar hasta el momento de realizada la operacion.
+Ademas, la pagina contiene estilos CSS3 hechos con SCSS. Se tiene en cuenta y se sabe que los mismos no son necesarios en ninguna instancia de entrega, sin embargo decidi incluirlos ya que quiero, en un futuro, mostrar este proyecto como parte de mi portfolio. 
 
-- Fecha de creacion: 05/09/2022
-- Fecha de finalizacion: 05/09/2022
+- Fecha de creacion: 06/09/2022
+- Fecha de finalizacion: 07/09/2022
 
 */
 
@@ -143,7 +142,7 @@ let seguirComprando = 0
 
 /* 
 
-Objectos por cada articulo disponible ↓ ↓ ↓
+Objectos por cada plato disponible ↓ ↓ ↓
 
 */
 
@@ -156,13 +155,16 @@ const menu = [
   {id:6, nombre:'Fresh salad', precio: 2100},
 ]
 
+/*
+Varibale y alert donde muestra el menu al usuario ↓ ↓ ↓
+*/
+let nuestroMenu = menu.map((nuestroMenu_c)=> `${nuestroMenu_c.id}: ${nuestroMenu_c.nombre} $${nuestroMenu_c.precio}`)
+alert(`Nuestro menu:\n\n${nuestroMenu.join('\n\n')}\n\n`)
 
-let catalogo = menu.map((catalogo_c)=> `${catalogo_c.id}: ${catalogo_c.nombre} $${catalogo_c.precio}`)
-alert(`Esta es nuestra lista de productos:\n\n${catalogo.join('\n\n')}\n\n`)
 
-
-//alert(`Esta es nuestra lista de productos: ${catalogo.join('\n\n')}\n\n}`)
-
+/* 
+Ciclo que se ejecutara cuando el usuario quiera comprar ↓ ↓ ↓
+*/
 while (seguirComprando === 0) {
 
   eleccionProducto()
