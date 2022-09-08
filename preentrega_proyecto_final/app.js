@@ -38,89 +38,31 @@ function compraCalc (a, b, c, d) {
   carrito.push(aCarrito[0])
 }
 
+
+
+
+function eleccionProductoSimplificada(productoAComprar){
+
+  let unidades = Number(prompt('Cuantas unidades?'))
+
+  let unidadesElegidas = unidades
+
+  let nombre = menu[productoAComprar].nombre
+
+  let precio = menu[productoAComprar].precio
+
+  compraCalc(precio, unidades, nombre, unidadesElegidas)
+}
+
+
+
+
+
 function eleccionProducto(){
 
-  let productoAComprar = Number(prompt('\n Si desea comprar la Entrada fría ingrese 1 \n\n Si desea comprar el Corn deluxe ingrese 2 \n\n Si desea comprar las Rabas ingrese 3 \n\n Si desea comprar la Tabla de quesos ingrese 4 \n\n Si desea comprar la Premium salad ingrese 5 \n\n Si desea comprar la Fresh salad ingrese 6\n\n'))
+  let productoAComprar = Number(prompt('\n Si desea comprar la Entrada fría ingrese 0 \n\n Si desea comprar el Corn deluxe ingrese 1 \n\n Si desea comprar las Rabas ingrese 2 \n\n Si desea comprar la Tabla de quesos ingrese 3 \n\n Si desea comprar la Premium salad ingrese 4 \n\n Si desea comprar la Fresh salad ingrese 5\n\n'))
 
-  if (productoAComprar == 1) {
-
-    let unidades = Number(prompt('Cuantas unidades?'))
-
-    let unidadesElegidas = unidades
-
-    let nombre = menu[0].nombre
-
-    let precio = menu[0].precio
-
-    compraCalc(precio, unidades, nombre, unidadesElegidas)
-
-
-  }else if (productoAComprar == 2){
-      
-    let unidades = Number(prompt('Cuantas unidades?'))
-
-    let unidadesElegidas = unidades
-
-    let nombre = menu[1].nombre
-
-    let precio = menu[1].precio
-
-    compraCalc(precio, unidades, nombre, unidadesElegidas)
-
-
-  }else if (productoAComprar == 3){
-
-    let unidades = Number(prompt('Cuantas unidades?'))
-
-    let unidadesElegidas = unidades
-
-    let nombre = menu[2].nombre
-
-    let precio = menu[2].precio
-
-    compraCalc(precio, unidades, nombre, unidadesElegidas)
-
-  
-  }else if (productoAComprar == 4){
-
-    let unidades = Number(prompt('Cuantas unidades?'))
-
-    let unidadesElegidas = unidades
-
-    let nombre = menu[3].nombre
-
-    let precio = menu[3].precio
-
-    compraCalc(precio, unidades, nombre, unidadesElegidas)
-
-  
-  }else if (productoAComprar == 5){
-
-    let unidades = Number(prompt('Cuantas unidades?'))
-
-    let unidadesElegidas = unidades
-
-    let nombre = menu[4].nombre
-
-    let precio = menu[4].precio
-
-    compraCalc(precio, unidades, nombre, unidadesElegidas)
-
-  
-  }else if (productoAComprar == 6){
-
-    let unidades = Number(prompt('Cuantas unidades?'))
-
-    let unidadesElegidas = unidades
-
-    let nombre = menu[5].nombre
-
-    let precio = menu[5].precio
-
-    compraCalc(precio, unidades, nombre, unidadesElegidas)
-
-  
-  }
+  eleccionProductoSimplificada(productoAComprar)
 
   return carrito
 
@@ -147,12 +89,12 @@ Objectos por cada plato disponible ↓ ↓ ↓
 */
 
 const menu = [
-  {id:1, nombre:'Entrada fría', precio: 4300},
-  {id:2, nombre:'Corn deluxe', precio: 2200},
-  {id:3, nombre:'Rabas', precio: 3100},
-  {id:4, nombre:'Tabla de quesos', precio: 2999},
-  {id:5, nombre:'Premium salad', precio: 3350},
-  {id:6, nombre:'Fresh salad', precio: 2100},
+  {id:0, nombre:'Entrada fría', precio: 4300},
+  {id:1, nombre:'Corn deluxe', precio: 2200},
+  {id:2, nombre:'Rabas', precio: 3100},
+  {id:3, nombre:'Tabla de quesos', precio: 2999},
+  {id:4, nombre:'Premium salad', precio: 3350},
+  {id:5, nombre:'Fresh salad', precio: 2100},
 ]
 
 /*
