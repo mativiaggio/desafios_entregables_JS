@@ -22,7 +22,9 @@ Funciones del programa ↓ ↓ ↓
 
 */
 
-function compraCalc (a, b, c) {
+function compraCalc (a, b, c, d) {
+
+  let unidadesTotales = d
 
   let totalMasUnidades = a * b
 
@@ -31,7 +33,7 @@ function compraCalc (a, b, c) {
   let totalACarrito = Math.floor(totalMasUnidadesMasIVA)
 
   let aCarrito = [
-    {articulo : c, precio: totalACarrito}
+    {articulo : c, precio: totalACarrito, unidadesTotales}
   ]
 
   carrito.push(aCarrito[0])
@@ -45,33 +47,39 @@ function eleccionProducto(){
 
     let unidades = Number(prompt('Cuantas unidades?'))
 
+    let unidadesElegidas = unidades
+
     let nombre = articulos[0].nombre
 
     let precio = articulos[0].precio
 
-    compraCalc(precio, unidades, nombre)
+    compraCalc(precio, unidades, nombre, unidadesElegidas)
 
 
   }else if (productoAComprar == 2){
       
     let unidades = Number(prompt('Cuantas unidades?'))
 
+    let unidadesElegidas = unidades
+
     let nombre = articulos[1].nombre
 
     let precio = articulos[1].precio
 
-    compraCalc(precio, unidades, nombre)
+    compraCalc(precio, unidades, nombre, unidadesElegidas)
 
 
   }else if (productoAComprar == 3){
 
     let unidades = Number(prompt('Cuantas unidades?'))
 
+    let unidadesElegidas = unidades
+
     let nombre = articulos[2].nombre
 
     let precio = articulos[2].precio
 
-    compraCalc(precio, unidades, nombre)
+    compraCalc(precio, unidades, nombre, unidadesElegidas)
 
   
   }
@@ -117,7 +125,7 @@ while (seguirComprando == 0) {
 
   eleccionProducto()
 
-  let carrito_list = carrito.map((carrito_completo)=> `${carrito_completo.articulo} $${carrito_completo.precio}`)
+  let carrito_list = carrito.map((carrito_completo)=> `${carrito_completo.articulo} $${carrito_completo.precio} (${carrito_completo.unidadesTotales})`)
 
   const total = carrito.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 
