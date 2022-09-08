@@ -9,7 +9,7 @@
 
 /*The following line prevents the navbar to obscure the elements.*/
 html {
-  scroll-padding-top: 68px; /* height of sticky navbar */
+  scroll-padding-top: 67px; /* height of sticky navbar */
 }
 
 /* Remove default margin */
@@ -319,7 +319,7 @@ main .info-bar .info-bar-pic {
   -o-background-size: cover !important;
 }
 main .quienes-somos {
-  height: 100vh;
+  height: fit-content;
 }
 main .quienes-somos h1 {
   margin: 20px 0;
@@ -374,6 +374,215 @@ main .quienes-somos .quienes-somos-content img {
   main .quienes-somos .quienes-somos-content img {
     height: 350px;
   }
+}
+main .contactanos {
+  height: 80vh;
+  background-image: url(/assets/img/albert-1v72w9EhcWQ-unsplash.jpg);
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  z-index: auto;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+}
+@media screen and (max-width: 64em) {
+  main .contactanos {
+    height: 200vh;
+  }
+}
+main .contactanos .contactanos-bg-filter {
+  height: 80vh;
+  background-color: rgba(116, 116, 116, 0.452);
+  backdrop-filter: blur(4px);
+}
+@media screen and (max-width: 64em) {
+  main .contactanos .contactanos-bg-filter {
+    height: 200vh;
+  }
+}
+main .contactanos .contactanos-bg-filter .c-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contactanos .contactanos-bg-filter .c-title-container h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+main .contactanos .contactanos-bg-filter .c-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+}
+@media screen and (max-width: 64em) {
+  main .contactanos .contactanos-bg-filter .c-cards-container {
+    flex-direction: column;
+  }
+}
+main .contactanos .contactanos-bg-filter .c-cards-container .card {
+  height: 275px;
+  width: 253px;
+  border-radius: 15px 15px 50px 50px;
+}
+@media screen and (max-width: 64em) {
+  main .contactanos .contactanos-bg-filter .c-cards-container .card {
+    margin-bottom: 150px;
+  }
+}
+main .contactanos .contactanos-bg-filter .c-cards-container .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contactanos .contactanos-bg-filter .c-cards-container .card .card-body img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+main .contactanos .contactanos-bg-filter .c-cards-container .card .card-body h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: hsl(206deg, 97%, 15%);
+}
+main .contactanos .contactanos-bg-filter .c-cards-container .card .c-a-container {
+  outline: 1px solid hsl(206deg, 97%, 15%);
+  background-color: hsl(206deg, 97%, 15%);
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contactanos .contactanos-bg-filter .c-cards-container .card .c-a-container a {
+  background-color: hsl(206deg, 97%, 15%);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+footer {
+  height: fit-content;
+  background-color: hsl(206deg, 97%, 15%);
+}
+footer .footer-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+footer .footer-title-container h1 {
+  color: white !important;
+  font-family: "Tiro Bangla", serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 76px !important;
+  text-transform: uppercase !important;
+  margin-left: 15px !important;
+}
+footer .footer-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-navbar .footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-navbar .footer-links li {
+  list-style: none;
+}
+footer .footer-navbar .footer-links li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+footer .footer-navbar .footer-links li a:hover {
+  text-decoration: underline;
+}
+footer .footer-navbar .footer-navbar-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-navbar .footer-navbar-buttons .a-delivery-footer .btn-delivery-footer {
+  background-color: rgba(255, 255, 255, 0);
+  height: 60px;
+  width: 185px;
+  font-size: 30px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 3px solid white;
+  text-transform: uppercase;
+  float: right;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+footer .footer-navbar .footer-navbar-buttons .a-delivery-footer .btn-delivery-footer:hover {
+  text-decoration: none !important;
+  background-color: white !important;
+  color: hsl(206deg, 97%, 15%) !important;
+}
+footer .footer-navbar .footer-navbar-buttons .a-reserva-footer {
+  list-style: none;
+}
+footer .footer-navbar .footer-navbar-buttons .a-reserva-footer .btn-reserva-footer {
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  width: 250px;
+  font-size: 30px;
+  color: hsl(206deg, 97%, 15%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 3px solid white;
+  text-transform: uppercase;
+}
+footer .footer-navbar .footer-navbar-buttons .a-reserva-footer .btn-reserva-footer:hover {
+  text-decoration: none !important;
+  background-color: hsl(206deg, 97%, 15%) !important;
+  color: white !important;
+}
+footer .footer-navbar p {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

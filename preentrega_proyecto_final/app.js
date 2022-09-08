@@ -38,9 +38,6 @@ function compraCalc (a, b, c, d) {
   carrito.push(aCarrito[0])
 }
 
-
-
-
 function eleccionProductoSimplificada(productoAComprar){
 
   let unidades = Number(prompt('Cuantas unidades?'))
@@ -53,10 +50,6 @@ function eleccionProductoSimplificada(productoAComprar){
 
   compraCalc(precio, unidades, nombre, unidadesElegidas)
 }
-
-
-
-
 
 function eleccionProducto(){
 

@@ -10,7 +10,7 @@
 
 /*The following line prevents the navbar to obscure the elements.*/
 html {
-  scroll-padding-top: 68px; /* height of sticky navbar */
+  scroll-padding-top: 67px; /* height of sticky navbar */
 }
 
 /* Remove default margin */
@@ -132,13 +132,127 @@ main {
     }
   }
   .quienes-somos {
-    height: 100vh;
+    height: fit-content;
     h1 {
       margin: 20px 0;
       @include i-main-qs-h1
     }
     .quienes-somos-content {
       @include quienes-somos-content;
+    }
+  }
+  .contactanos {
+    height: 80vh;
+    background-image: url(/assets/img/albert-1v72w9EhcWQ-unsplash.jpg);
+    @media screen and (max-width: 64em){
+      height: 200vh;
+    }
+    @include bg-pic-config(fixed);
+    .contactanos-bg-filter {
+      @include contactanos-bg-filter;
+    }
+  }
+}
+
+footer {
+  height: fit-content;
+  background-color: $clr-main-dark;
+  .footer-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    h1 {
+      color: white !important;
+      font-family: $ff-logo !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 76px !important;
+      text-transform: uppercase !important;
+      margin-left: 15px !important;
+
+    }
+  }
+  .footer-navbar {
+    @include all-center(column);
+    .footer-links{
+      @include all-center(column);
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          font-family: $ff-body;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 50px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .footer-navbar-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .a-delivery-footer {
+        .btn-delivery-footer {
+          background-color: rgba(255, 255, 255, 0);
+          height: 60px;
+          width: 185px;
+          font-size: 30px;
+          color: white;
+          font-family: $ff-body;
+          font-weight: 700;
+          border-radius: 50px;
+          border: 3px solid white;
+          text-transform: uppercase;
+          float: right;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          &:hover {
+            text-decoration: none !important;
+            background-color: white !important;
+            color: $clr-main-dark !important;
+        }
+        }
+      }
+      .a-reserva-footer {
+        list-style: none;
+        .btn-reserva-footer {
+          background-color: rgb(255, 255, 255);
+          height: 60px;
+          width: 250px;
+          font-size: 30px;
+          color: $clr-main-dark;
+          font-family: $ff-body;
+          font-weight: 700;
+          border-radius: 50px;
+          border: 3px solid white;
+          text-transform: uppercase;
+          &:hover {
+              text-decoration: none !important;
+              background-color: $clr-main-dark !important;
+              color: white !important;
+          }
+        }
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-family: $ff-body;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
     }
   }
 }
