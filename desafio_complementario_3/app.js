@@ -1,15 +1,14 @@
 /*
 
-Primera entrega del proyecto final.
+Desafio complementario 3.
 
-Como se puede notar se ha usado el mismo codigo JavaScript que en la entrega de arrays. Sin embargo tiene una diferencia, se agrego la funcion de, en el alert que muestra el carrito, tambien muestra la cantidad de unidades elegidas por el usuario y se aclara el IVA% que se aplico al producto.
+Como se puede notar se ha usado el mismo codigo JavaScript que en la primer entrega del proyecto final.
 
-Notese tambien que se ha cambiado el array de objetos, este array ahora muestra una serie de platos que se pueden pedir a comprar, ya que la tematica del proyecto es de un "ecommerce" de un restaurant de lujo el cual contiene un carrito de compras donde puede pedir y abonar productos para ser enviados por medio de un delivery.
+Se aplico DOM de la siguiente manera:
+Se aplico una pequeña porcio  de codigo, desde la linea 135 a la linea 155 que lo que hace es, una vez pare el ciclo de compra (por medio de los alerts) se genere un div con el contenido del carrito visible en el html de la pagina. Este div fue colocado en el header para una facil visualizacion. Ademas de agrego un boton (no funcional por el momento) para realizar el pago. Ademas se dio un poco de estilo.
 
-Ademas, la pagina contiene estilos CSS3 hechos con SCSS. Se tiene en cuenta y se sabe que los mismos no son necesarios en ninguna instancia de entrega, sin embargo decidi incluirlos ya que quiero, en un futuro, mostrar este proyecto como parte de mi portfolio. 
-
-- Fecha de creacion: 06/09/2022
-- Fecha de finalizacion: 07/09/2022
+- Fecha de creacion: 08/09/2022
+- Fecha de finalizacion: 09/09/2022
 
 */
 
