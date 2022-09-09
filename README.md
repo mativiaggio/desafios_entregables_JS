@@ -108,3 +108,16 @@ function random(min, max) {
 
 _Este es el [figma](https://www.figma.com/file/OiNOwjUaVQjLIKOHWenNgC/JavaScript-Project-Design?node-id=34%3A686) donde voy a ir completando los diseños, en caso de despierte curiosidad._
 </div>
+
+<div align="center">
+
+## Desafio complementario 3
+</div>
+
+    Como se puede notar se ha usado el mismo codigo JavaScript que en la primer entrega del proyecto final.
+
+    Se aplico DOM de la siguiente manera:
+    Se aplico una pequeña porcio  de codigo, desde la linea 135 a la linea 155 que lo que hace es, una vez pare el ciclo de compra (por medio de los alerts) se genere un div con el contenido del carrito visible en el html de la pagina. Este div fue colocado en el header para una facil visualizacion. Ademas de agrego un boton (no funcional por el momento) para realizar el pago. Ademas se dio un poco de estilo.
+
+    - Fecha de creacion: 08/09/2022
+    - Fecha de finalizacion: 09/09/2022
