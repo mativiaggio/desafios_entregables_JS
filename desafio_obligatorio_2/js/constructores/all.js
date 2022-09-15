@@ -121,7 +121,7 @@ const buildProductosCart = () => {
     modalCarritoProducto.innerHTML = '';
     if (cartProducto.length > 0) {
         cartProducto.forEach ((producto, productoIndex) => {
-            totalProductos = totalProductos + producto.precio;
+            totalProductos += producto.precio;
             const carritoContainer = document.createElement('div');
             carritoContainer.classList.add('row', 'cart-row')
             carritoContainer.innerHTML = `
