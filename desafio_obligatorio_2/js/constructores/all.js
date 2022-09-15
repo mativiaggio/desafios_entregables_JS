@@ -10,7 +10,7 @@ const buildProductos = () => {
         section.idName
         section.innerHTML = `
         <div class="card" style="width: 18rem;" id="${producto.categoria}">
-            <img src="${producto.img}" class="card-img-top" alt="...">
+            <img loading="lazy" src="${producto.img}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title mi-desc-title">${producto.nombre}</h5>
                 <div class="detail-calific">
