@@ -121,3 +121,18 @@ _Este es el [figma](https://www.figma.com/file/OiNOwjUaVQjLIKOHWenNgC/JavaScript
 
     - Fecha de creacion: 08/09/2022
     - Fecha de finalizacion: 09/09/2022
+
+<div align="center">
+
+## Desafio obligatorio 2
+</div>
+
+    Se implemento DOM y eventos en menu.html, creando un layout con todos los items dentro del array de objetos. 
+Para un mayor orden en el codigo, se hizo uso de import y export con el objetivo de almacenar el array de objetos y las funciones en archivos separados. Decidi usar esto ya que mi array de objetos es muy grande, debido a toda la informacion que quiero mostrar en cada producto, y molestaba un poco a la hora de trabajar.
+
+
+Hay un error en el codigo, al sumar cantidades en el carrito la suma se hace de manera erronea, suma mas de lo que deberia, intente solucionarlo de mil y un formas pero no pude, esperaba que me pudieras dar una mano con eso. Igualmente voy a seguir intentado arreglarlo.
+
+
+    - Fecha de creacion: 11/09/2022
+    - Fecha de finalizacion: 15/09/2022
