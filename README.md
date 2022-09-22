@@ -136,3 +136,19 @@ _Este es el [figma](https://www.figma.com/file/OiNOwjUaVQjLIKOHWenNgC/JavaScript
 
     - Fecha de creacion: 11/09/2022
     - Fecha de finalizacion: 15/09/2022
+
+<div align="center">
+
+## Segunda preentrega del proyecto final
+</div>
+
+    Se utilizo el codigo obtenido hasta la ultima entrega, añadiendo JSON local storage para almacenar los elementos del carrito en caso de que el usuario seleccionara alguno. Tambien se cambio el lugar donde aparece el carrito. El icono en la navbar de una bolsa lleva al html cart.html, en donde se encontraran todos los productos.
+
+    - Fecha de creacion: 15/09/2022
+    - Fecha de finalizacion: 22/09/2022
+
+### DUDA
+La unica forma en la que pude mover el carrito a otro html es dejando el codigo del carrito en el html de menu. Tuve que hacer un display none visibility hidden mediante css. No lo pude solucionar, si borro la porcion de codigo perteneciente al html de carrito en menu deja de andar en el html de carrito. Pero si lo dejo en ambos anda.
+Esperaba que me pudieras ayudar con eso.
+
+Dejo el link de la pagina hosteada ---> [LINK](https://mativiaggio.github.io/glum/pages/menu.html)
